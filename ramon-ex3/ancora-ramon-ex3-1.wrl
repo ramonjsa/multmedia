@@ -1,0 +1,17 @@
+#vrml v2.0 utf8
+Anchor {
+ 
+	children [
+		Shape {
+			geometry Text {
+                string "Bem vindo"
+                fontStyle FontStyle {
+                    size 2.5
+                }
+            }
+        }
+    ] 
+	url "ramon-ex3-1.wrl" 
+	description "cubo" 
+	parameter ["target=my_frame" ] 
+} 

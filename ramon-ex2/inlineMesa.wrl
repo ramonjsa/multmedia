@@ -1,0 +1,51 @@
+#VRML V2.0 utf8
+PROTO Mesa [ field SFColor legColor  1 1 1
+                      field SFColor topColor 1 1 1 ]
+{
+  Transform {
+    children [
+      Transform {  
+       translation 0 0.6 0
+        children
+          Shape {
+            appearance Appearance {
+              texture ImageTexture{
+                url "box.jpg"
+              }
+              material Material { diffuseColor IS topColor }
+            }
+            geometry Box { size 1.2 0.2 1.2 }
+          }
+      }
+
+      Transform {  
+       translation -.5 0 -.5
+        children
+          DEF Leg Shape {
+            appearance Appearance {
+               texture ImageTexture{
+                url "wood-texture.jpg"  
+              }
+              material Material { diffuseColor IS legColor }
+            }
+            geometry Cylinder { height 1 radius .1 }
+          }
+      }
+      Transform {   
+       translation .5 0 -.5
+        children USE Leg
+      }
+      Transform {  
+       translation -.5 0 .5
+        children USE Leg
+      }
+      Transform { 
+       translation .5 0 .5
+        children USE Leg
+      }
+    ] 
+  }
+}
+Mesa{
+
+}

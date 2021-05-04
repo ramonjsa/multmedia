@@ -1,0 +1,84 @@
+#VRML V2.0 utf8
+
+DEF deBaixo Viewpoint {
+	fieldOfView 0.785398
+	position 0 -10 0
+	orientation 1 0 0 1.57
+	description "de Baixo"
+	jump FALSE
+	
+}
+DEF deCima Viewpoint {
+	fieldOfView 0.785398
+	position 0 10 0
+	orientation 1 0 0 -1.57
+	description "de Cima"
+	jump TRUE
+	
+}
+
+
+DEF deLateral Viewpoint {
+	fieldOfView 0.785398
+	position 10 0 0
+	orientation 0 1 0 1.57
+	description "de Lateral"
+	jump TRUE
+	
+}
+
+DEF deDiagonal Viewpoint {
+	fieldOfView 0.785398
+	position 7.07 0 7.07
+	orientation 0 1 0 0.785398
+	description "de diagonal"
+	jump TRUE
+	
+}
+
+Inline {
+   url      "inlineMesa.wrl"
+
+}
+
+
+Transform {
+    translation -0.6 -0.3 0
+    scale .5 .5 .5
+    children [
+        Inline {
+            url      "inlineCadeira.wrl"
+        }
+
+    ]
+}
+Transform {
+    rotation 0 1 0 4.7124
+    translation 0 -0.3 -0.6
+    scale .5 .5 .5
+    children [
+        Inline {
+            url      "inlineCadeira.wrl"
+        }
+    ]
+}
+Transform {
+    rotation 0 1 0  3.1416
+    translation 0.6 -0.3 0
+    scale .5 .5 .5
+    children [
+        Inline {
+            url      "inlineCadeira.wrl"
+        }
+    ]
+}
+Transform {
+    rotation 0 1 0  1.5708
+    translation 0 -0.3 0.6
+    scale .5 .5 .5
+    children [
+        Inline {
+            url      "inlineCadeira.wrl"
+        }
+    ]
+}

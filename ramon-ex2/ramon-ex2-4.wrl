@@ -1,0 +1,135 @@
+#VRML V2.0 utf8
+
+Transform {
+   translation 0 2.5 0  
+   children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                diffuseColor 0 1 0
+                } 
+        }
+            geometry DEF tubo Cylinder {
+                radius 0.05
+                height 5
+            }
+        }
+   ]
+}
+Transform {
+   translation  -1 5  0   
+   children [
+        Shape {
+                appearance Appearance {
+                        material Material {
+                                diffuseColor 0.0 1.0 0
+                        }
+                }
+                geometry Text {
+                        string [ "Y" ]
+                }
+        }
+    ]
+}
+Transform {
+   translation 2.5 0  0   
+   rotation 0 0 1  4.7124 
+   children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 0 0
+                } 
+            }
+            geometry USE  tubo
+        }
+   ]
+}
+Transform {
+   translation  5  -1 0  
+   children [
+        Shape {
+                appearance Appearance {
+                        material Material {
+                                diffuseColor 1.0 0.0 0
+                        }
+                }
+                geometry Text {
+                        string [ "X" ]
+                }
+        }
+    ]
+}
+Transform {
+   translation 0 0 2.5   
+   rotation 1 0 0  1.5708 
+   children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 1
+                } 
+            }
+            geometry USE  tubo
+        }
+   ]
+}
+Transform {
+   translation  -1  -1 5  
+   children [
+        Shape {
+                appearance Appearance {
+                        material Material {
+                                diffuseColor 0 0.0 1
+                        }
+                }
+                geometry Text {
+                        string [ "Z" ]
+                }
+        }
+    ]
+}
+Transform {
+   translation 0 5.7 0
+   children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                diffuseColor 0 1 0
+                } 
+        }
+            geometry DEF ponta Cone {
+                bottomRadius 0.1
+                height 1
+            }
+        }
+   ]
+}
+Transform {
+   translation 5.7 0 0
+   rotation 0 0 1  4.7124 
+   children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 0 0
+                } 
+            }
+            geometry USE  ponta
+        }
+   ]
+}
+Transform {
+   translation 0 0 5.7
+   rotation 1 0 0  1.5708 
+   children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 1
+                } 
+            }
+            geometry USE  ponta
+        }
+   ]
+}

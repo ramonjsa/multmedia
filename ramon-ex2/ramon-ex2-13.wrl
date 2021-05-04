@@ -1,0 +1,52 @@
+#VRML V2.0 utf8
+
+DEF deBaixo Viewpoint {
+	fieldOfView 0.785398
+	position 0 -10 0
+	orientation 1 0 0 1.57
+	description "de Baixo"
+	jump FALSE
+	
+}
+DEF deCima Viewpoint {
+	fieldOfView 0.785398
+	position 0 10 0
+	orientation 1 0 0 -1.57
+	description "de Cima"
+	jump TRUE
+	
+}
+
+
+DEF deLateral Viewpoint {
+	fieldOfView 0.785398
+	position 10 0 0
+	orientation 0 1 0 1.57
+	description "de Lateral"
+	jump TRUE
+	
+}
+
+DEF deDiagonal Viewpoint {
+	fieldOfView 0.785398
+	position 7.07 0 7.07
+	orientation 0 1 0 0.785398
+	description "de diagonal"
+	jump TRUE
+	
+}
+
+
+
+
+
+
+Inline {
+   url      "inlineMesa.wrl"
+
+}
+
+Inline {
+   url "https://docs.google.com/uc?export=download&id=1OSVvyFQKfFX3gvz7MV7PHv3QkyLeJyYd"
+}
+

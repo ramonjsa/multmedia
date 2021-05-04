@@ -1,0 +1,16 @@
+Exercício 3 - Formas livres (IndexedFaceSet), Extrusão e Billboard
+
+
+1) Defina 8 pontos no espaço representando vértices de um cubo.
+2) Desenhe um cubo em wireframe (sem faces sólidas) com coloração variada entre os vértices.Obs.: A configuração de renderização do plug-in não pode ser alterada.
+3) Construa as 3 pirâmides do Egito. Modele apenas uma pirâmide e replique as outras duas. 4) Coloque um pano de fundo de céu e areia nas pirâmides do exercício anterior. Adicione nuvens utilizando um panorama semitransparente. Simule uma “tempestade de areia” através do nó FOG.
+5) Construa uma estrela de 6 pontas em 3D, da seguinte maneira: Faça com que cada ponta da estrela esteja conectada a um mesmo centro deslocado no eixo Z (como num espremedor de laranjas).
+6) Construa um carro rudimentar (como se fosse um carro de madeira).
+	a) Crie 2 pares de rodas (cilindros achatados) ligados por um eixo, um capô, uma mala. Use indexedFaceSet para criar a caixa central onde deverá ficar os passageiros.
+7) Construa um "pote
+8) Use o pote criado anteriormente e construa uma cena com vários potes
+9) Construa um anel 3D
+10) Construa uma bússola que sempre aponta para o usuário (como se o mesmo fosse o polo magnético
+11) Construa um canhão que mira sempre no usuário
+a) Obs.: A mira do cano do canhão fica sempre para cima.
+12) Construa uma cadeia com duas montanhas (com textura) e coloque cópias do canhão do exercício anterior em cima de cada uma delas
